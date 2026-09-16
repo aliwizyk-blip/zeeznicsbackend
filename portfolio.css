@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080d1a;
+    color: #f9fafb;
+    line-height: 1.6;
+}
+
+header,
+section {
+    padding-inline: 10vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #080d1a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*nav {
+    position: sticky;
+    top: 0;
+}*/
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    padding: 10px 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    color: #f5dddd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+address {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* IMPORTANT */
+    gap: 30px;
+    align-items: center;
+}
+
+.buttons-container a {
+    flex: 1;
+    /* 50% each */
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.work-btn {
+    background: #155bea;
+    color: white;
+}
+
+.contact-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #155bea;
+}
+
+.social-media {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #f5dddd;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background: #080D1A;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    color: #F8FAFC;
+    margin: 10px 0;
+}
+
+
+
+.hero-content h2 {
+    color: #2563EB;
+    font-size: 30px;
+}
+
+
+
+
+.hero-content p {
+    color: #A8B3C7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 45%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 420px;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+/* Blue shape behind the picture */
+.blue-shape {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background: #34d399;
+    border-radius: 45% 55% 60% 40%;
+    transform: rotate(-10deg);
+    z-index: 1;
+}
+
+.frontend {
+    color: #2563eb;
+}
+
+.developer {
+    color: white;
+}
+
+.logo-container {
+    width: 80%;
+    max-width: 700px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 10%;
+    height: auto;
+    display: block;
+}
+
+/* About Section */
+.about {
+    background: #ffffff;
+    padding: 35px 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* About Me Heading */
+.about h2 {
+    font-size: 28px;
+    color: #111827;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Blue line under heading */
+.about-line {
+    width: 38px;
+    height: 3px;
+    background: #2563eb;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+/* Content */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+/* Person Icon Box */
+.person-icon {
+    width: 90px;
+    height: 90px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.person-icon i {
+    font-size: 42px;
+    color: #2563eb;
+}
+
+/* Paragraph */
+.about-text {
+    max-width: 520px;
+}
+
+.about-text p {
+    margin: 0 0 15px;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #1d4ed8;
+}
+
+.download-btn i {
+    font-size: 14px;
+}
+
+/* =========================
+   WHAT I DO SECTION
+========================= */
+
+.what-i-do {
+    background: #ffffff;
+    padding: 25px 40px 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* What I Do Heading */
+.what-i-do h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Blue line underneath heading */
+.what-i-do .heading-line {
+    width: 30px;
+    height: 3px;
+    background: #2563eb;
+    margin-top: 7px;
+    margin-bottom: 18px;
+}
+
+/* Three cards container */
+.services-container {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+/* Individual card */
+.service-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    min-height: 165px;
+    padding: 15px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Icon box */
+.service-icon {
+    width: 42px;
+    height: 42px;
+    background: #2563eb;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 12px;
+    border-radius: 4px;
+}
+
+/* Icon */
+.service-icon i {
+    font-size: 20px;
+}
+
+/* Card heading */
+.service-card h3 {
+    margin: 0 0 10px;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Card paragraph */
+.service-card p {
+    margin: 0;
+    color: #555555;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .what-i-do {
+        padding: 25px 20px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* =========================
+   GENERAL SECTION STYLE
+========================= */
+
+.projects-section,
+.skills-section,
+.contact-section {
+    background: #ffffff;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.projects-section h2,
+.skills-section h2,
+.contact-section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #111827;
+}
+
+
+/* Blue line under headings */
+
+.heading-line {
+    width: 32px;
+    height: 3px;
+    background: #2563eb;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   MY PROJECTS
+========================= */
+
+.projects-container {
+    display: flex;
+    gap: 22px;
+}
+
+.project-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding-bottom: 18px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 16px;
+    color: #111827;
+    margin: 15px 15px 8px;
+}
+
+.project-card p {
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0 15px 15px;
+}
+
+.project-card a {
+    margin-left: 15px;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-card a i {
+    margin-left: 4px;
+}
+
+
+/* =========================
+   MY SKILLS
+========================= */
+
+.skills-section {
+    padding-top: 10px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 240px 1fr 45px;
+    align-items: center;
+    gap: 15px;
+
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* Skill name + icon */
+
+.skill-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+/* Icon box */
+
+.skill-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+
+/* Individual icon backgrounds */
+
+.html-icon {
+    background: #fff1ed;
+    color: #e34c26;
+}
+
+.css-icon {
+    background: #eef5ff;
+    color: #2563eb;
+}
+
+.ui-icon {
+    background: #f2edff;
+    color: #7546d8;
+}
+
+.responsive-icon {
+    background: #e9fff5;
+    color: #159b68;
+}
+
+
+/* Progress background */
+
+.progress {
+    width: 100%;
+    height: 6px;
+    background: #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Blue progress */
+
+.progress-bar {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+
+/* Progress percentages */
+
+.html-progress {
+    width: 90%;
+}
+
+.css-progress {
+    width: 85%;
+}
+
+.ui-progress {
+    width: 75%;
+}
+
+.responsive-progress {
+    width: 90%;
+}
+
+.percentage {
+    font-size: 12px;
+    color: #555555;
+}
+
+
+/* =========================
+   CONTACT ME
+========================= */
+
+.contact-section {
+    padding-top: 25px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+/* Contact form */
+
+.contact-form {
+    flex: 1.5;
+}
+
+
+/* Name + email */
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-row input {
+    width: 50%;
+}
+
+
+/* Inputs */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid #eeeeee;
+    outline: none;
+
+    padding: 12px;
+    margin-bottom: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2563eb;
+}
+
+
+/* Send button */
+
+.contact-form button {
+    background: #2563eb;
+    color: #ffffff;
+
+    border: none;
+    padding: 11px 18px;
+
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact-form button i {
+    margin-left: 7px;
+}
+
+
+/* =========================
+   GET IN TOUCH BOX
+========================= */
+
+.contact-info {
+    flex: 0.8;
+    background: #eef5ff;
+    padding: 22px;
+    box-sizing: border-box;
+}
+
+.contact-info h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    color: #222222;
+}
+
+.contact-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+
+/* Contact information rows */
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    color: #444444;
+}
+
+.contact-item i {
+    color: #2563eb;
+    width: 18px;
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .skill {
+        grid-template-columns: 170px 1fr 40px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row input {
+        width: 100%;
+    }
+
+    .skill {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .percentage {
+        display: none;
+    }
+}

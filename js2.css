@@ -1,0 +1,43 @@
+body {
+    background-coloR: rgb(245, 245, 83);
+}
+
+section {
+    background: rgb(8, 117, 75);
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    gap: 0.7rem;
+}
+
+label {}
+
+input {
+    padding: 0.6rem 0.9rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #4f46e5;
+}
+
+.add-btn {
+    padding: 0.6rem 1rem;
+    background: #4f46e5;
+    color: rgb(13, 243, 224);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button.add-btn:hover {
+    background: #4338ca;
+}
